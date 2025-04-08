@@ -1,0 +1,91 @@
+{
+    "random_seed": 19980523,
+    "save_freq": 500,
+    "batch_size": 75,
+    "train_percent": 1.0,
+    "test_percent": 1,
+    "max_epochs": 3000,
+    "init_lr": 0.01,
+    "mode": "train",
+    "run_name": "Calibration-5",
+    "model_name": "NFM",
+    "NFMmode": "Cheby-M-order",
+    "device": "cuda:0",
+    "load_option_path": null,
+    "load_model_path": null,
+    "load_best_param": false,
+    "resume_epochs": 0,
+    "display_result": false,
+    "test_result_data_save": false,
+    "metrics": [
+        "psnr",
+        "ssim",
+        "fsim",
+        "vif",
+        "nqm"
+    ],
+    "result_save_path": null,
+    "pos_emb_dim": 10,
+    "hidden_layers_enc": null,
+    "hidden_layers_dec": [
+        3,
+        16,
+        64,
+        2
+    ],
+    "M_order": 16,
+    "ChebyOrder": "first",
+    "degree": 9,
+    "epoch_l2": null,
+    "l2_struct": 1.0,
+    "parallel_method": "jit",
+    "recon_plot_range_x": [
+        7,
+        30
+    ],
+    "recon_plot_range_y": [
+        7,
+        30
+    ],
+    "recon_plot_range_z": [
+        7,
+        30
+    ],
+    "default_recon_range": true,
+    "UpsampleRate": 1,
+    "train_encoder": true,
+    "data_type": "OpenMPI",
+    "SM_path": "C:\\OpenMPIData\\calibrations\\5.mdf",
+    "Calibration_num": "5",
+    "Mea_path": [
+        "C:\\OpenMPIData\\Measurements\\shape\\2.mdf",
+        "C:\\OpenMPIData\\Measurements\\resolution\\2.mdf",
+        "C:\\OpenMPIData\\Measurements\\concentration\\2.mdf"
+    ],
+    "num_workers": 1,
+    "SNR_Threshold": 7.0,
+    "sampling_method": "random",
+    "downsample_factor": [
+        2,
+        2,
+        2
+    ],
+    "sparsity": 0.0625,
+    "plot_plane": 19,
+    "Rx": [
+        true,
+        true,
+        false
+    ],
+    "Rx_Recon": [
+        true,
+        false,
+        false
+    ],
+    "phantom_type": [
+        "Shape",
+        "Resolution",
+        "Concentration"
+    ],
+    "select_dec_idx": null
+}
