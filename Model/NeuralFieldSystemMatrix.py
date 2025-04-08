@@ -70,7 +70,7 @@ class SMNeuralFieldModel:
                                                              )
             self.scheduler_dict[f'decoder_{ck}'] = optim.lr_scheduler.CosineAnnealingLR(
                 self.optimizer_dict[f'decoder_{ck}'],
-                T_max=self.opt.max_epochs, eta_min=self.opt.init_lr / 5)
+                T_max=self.opt.max_epochs, eta_min=self.opt.init_lr / 10)
 
         self.loss_fn = nn.MSELoss()
         self.logger.modules = [self.NFModel]
